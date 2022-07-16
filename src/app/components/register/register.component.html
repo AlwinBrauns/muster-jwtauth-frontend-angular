@@ -1,0 +1,7 @@
+<app-basic-alert *ngIf="message" [message]="message"></app-basic-alert>
+<h2>Register</h2>
+<form [formGroup]="registerForm" (submit)="onSubmit()">
+  <input formControlName="username" type="text" name="username" placeholder="username" />
+  <input formControlName="password" type="password" name="password" placeholder="password" />
+  <input type="submit" value="Register" />
+</form>

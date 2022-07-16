@@ -1,0 +1,6 @@
+@use "src/app/variables" as vars;
+:host {
+  margin: vars.$default-distance;
+  @include vars.gridCenter;
+  gap: 20px;
+}

@@ -1,0 +1,4 @@
+@use "src/app/variables" as vars;
+:host {
+  @include vars.basicFormComponent;
+}

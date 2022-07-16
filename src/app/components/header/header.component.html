@@ -1,0 +1,18 @@
+<div class="navigation">
+  <nav>
+    <ul [ngClass]="hamburgerActivated?'open':''">
+      <li *ngFor="let route of routes | keyvalue">
+        <a routerLink="{{route.value}}">{{route.key.toUpperCase()}}</a>
+      </li>
+      <li *ngIf="showLogout">
+        <a href="#" (click)="onLogout()"> LOGOUT</a>
+      </li>
+    </ul>
+    <span [ngClass]="hamburgerActivated?'open':''" (click)="onOpenNav()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </span>
+  </nav>
+</div>
+<div class="space"></div>
